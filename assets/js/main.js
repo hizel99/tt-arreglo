@@ -29,32 +29,27 @@ const module = {
     },
     add: function () {
         this.productos.push(newProducto);
-        this.productos.push(newProducto);
-
         const tablaProducto = document.getElementById("productos");
-
         const tbody = document.createElement("tbody");
+        const tr = document.createElement("tr");
 
-        
-            const tr = document.createElement("tr");
+        let td = document.createElement("td");
+        td.innerText = newProducto.id;
+        tr.appendChild(td);
 
-            let td = document.createElement("td");
-            td.innerText = newProducto.id;
-            tr.appendChild(td);
+        td = document.createElement("td");
+        td.innerText = newProducto.nombre;
+        tr.appendChild(td);
 
-            td = document.createElement("td");
-            td.innerText = newProducto.nombre;
-            tr.appendChild(td);
+        td = document.createElement("td");
+        td.innerText = newProducto.precio;
+        tr.appendChild(td);
 
-            td = document.createElement("td");
-            td.innerText = newProducto.precio;
-            tr.appendChild(td);
+        tbody.appendChild(tr);
 
-            tbody.appendChild(tr);
-     
 
         tablaProducto.appendChild(tbody);
-        
+
     }
 }
 module.init();

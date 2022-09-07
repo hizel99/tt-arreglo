@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group mb-3"> 
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="id" id="idInput">
+                </div>
+
+                <div class="input-group mb-3"> 
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Nombre" id="nombreInput">
+                </div>
+            
+                <div class="input-group mb-3"> 
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Precio" id="precioInput">
+                </div>
+                <button type="button" class="btn btn-primary" id="button">Aceptar</button>
+            </div>     
+
+            <table id="productos" class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>          
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+            </table>
+            
+            
+        </div>
+        
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
